@@ -1,10 +1,10 @@
 const userInputValue = prompt('Введіть хоча б один символ');
-function getUserInputValue() {
-    if (userInputValue === null || userInputValue === '') {
+function getUserInputValue(value) {
+    if (value === null || value === '') {
         return 'try again';
     } 
-    return userInputValue;
+    return value;
 }
-console.log(getUserInputValue());
+console.log(getUserInputValue(userInputValue));
 
 
